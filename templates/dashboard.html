@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TECHveins</h1>
+<div class="buttons">  
+  <button class="neumorphic" onclick="returnLearner()">
+    <i class="fa-light fa-book"></i>
+    <span>LEARNERS MODE</span>
+  </button>
+  <button class="neumorphic" onclick="returnWork()">
+    <i class="fa-light fa-syringe"></i>
+    <span>WORK MODE</span>
+  </button>
+  <button class="neumorphic" onclick="returnPersonal()">
+    <i class="fa-light fa-heartbeat"></i>
+    <span>PERSONAL MODE</span>
+  </button>
+  
+</div>
+<script>
+  function returnLearner(){
+    window.location.href = '/learn';
+  }
+  function returnWork(){
+    window.location.href = '/work';
+  }
+  function returnPersonal(){
+    window.location.href = '/personal';
+  }
+</script>
+</body>
+</html>

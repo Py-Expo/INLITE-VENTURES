@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="{{ url_for('static', filename='medical.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <input class="btn_animation__checkbox" id="animation" type="checkbox">
+        <label class="btn_animation" for="animation" onclick="removeImage()">
+            <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+                <path style="fill:#60b533" d="m178.6 202 202.1 198-202.1 198-60.3-61.8L257.2 400 118.3 263.8z"/>
+                <path style="fill:#349905" d="m273.5 0 408.2 400-408.2 400-121.9-124.9L432.3 400 151.6 124.9z"/>
+                <path style="fill:#5ecc25" d="m202.1 401-84-86.2v166.4z"/>
+            </svg>
+        </label>
+        <button class="btn_menu" type="button" onclick="toggleOptions()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M4 5a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2H4Zm3 7a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Zm6 6a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1Z"
+                      fill="#000"/>
+            </svg>
+        </button>
+        
+        <div id="options" class="options">
+            <a href="/learn">Learn</a>
+            <a href="/work">Work</a>
+            <a href="/personal">Personal</a>
+        </div>
+        <main class="main">
+            <div class="main_section">
+                <div class="header_wrapper">
+                    <h1 class="header_title">Learners mode
+                  </h1>
+                    <p class="header_subtitle">clinical training modules
+                  </p>
+                </div>
+    
+                <img class="main_image" src="https://c4.wallpaperflare.com/wallpaper/56/325/305/dark-wallpaper-preview.jpg" width="800" height="800" alt="Borsh">
+    
+    
+                <div class="recipe_footer">
+    
+                    <dl class="recipe_controls">
+                        <dt class="subtitle">learing time set up</dt>
+                        <dd>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#0F0F0F"
+                                      d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11ZM3.007 12a8.993 8.993 0 1 0 17.986 0 8.993 8.993 0 0 0-17.986 0Z"/>
+                                <path fill="#0F0F0F"
+                                      d="M12 5a1 1 0 0 0-1 1v6.467s0 .26.127.457c.084.166.217.31.39.41l4.62 2.668a1 1 0 0 0 1-1.732L13 11.88V6a1 1 0 0 0-1-1Z"/>
+                            </svg>
+                            <span>1h 30m</span></dd>
+    
+                        <dt class="subtitle">daily challenge</dt>
+                        <dd>
+                            <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487.55 487.55"
+                                 xml:space="preserve"><path d="M244.625 171.415c-40 0-72.4 32.4-72.4 72.4s32.4 72.4 72.4 72.4 72.4-32.4 72.4-72.4c-.1-40-32.5-72.4-72.4-72.4zm0 48.8c-13 0-23.6 10.6-23.6 23.6 0 6-4.8 10.8-10.8 10.8s-10.8-4.8-10.8-10.8c0-24.9 20.3-45.2 45.2-45.2 6 0 10.8 4.8 10.8 10.8 0 6-4.9 10.8-10.8 10.8z"/>
+                                <path
+                                        d="M481.325 227.515c-224.8-258.6-428-53.9-476.4 2.8-6.5 7.6-6.6 18.8-.1 26.4 221.9 259 423.4 64.6 476.5 3.7 8.3-9.4 8.3-23.4 0-32.9zm-236.7 119.1c-56.8 0-102.8-46-102.8-102.8s46-102.8 102.8-102.8 102.8 46 102.8 102.8-46.1 102.8-102.8 102.8z"/></svg>
+                            <span>5 modlues</span>
+                        </dd>
+                    </dl>
+    
+    
+                    <div class="recipe_ingredients">
+                        <p class="recipe_title subtitle">DESCRIPTION</p>
+                        <ul class="recipe_list">
+                          <li>1.Bite-sized lessons</li>
+    <li>2.Variety of formats</li> 
+    <li>3.Learn on the go</li> 
+    <li>4.Wide range of topics</li>
+    <li>5.Track your progress</li>
+                        </ul>
+                    </div>
+    
+                    <div class="ingredients">
+                        <figure class="ingredients_item">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.FlU9Arwxo7shDk1l6NfjWAHaE2&pid=Api&P=0&h=180" alt="beetroot"/>
+                            <figcaption>PRIMARY CARE</figcaption>
+                        </figure>
+                        <figure class="ingredients_item">
+                            <img src="https://tse4.explicit.bing.net/th?id=OIP.QccBvv1X3MV5SefVCIczpQHaEL&pid=Api&P=0&h=180" alt="cabbage"/>
+                            <figcaption>SECONDARY CARE</figcaption>
+                        </figure>
+                        <figure class="ingredients_item">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.O6Rxc270pxGc21qNXc9upwAAAA&pid=Api&P=0&h=180" alt="pork neck"/>
+                            <figcaption>TERTIARY CARE</figcaption>
+                        </figure>
+                        <figure class="ingredients_item">
+                            <img src="https://tse2.mm.bing.net/th?id=OIP.3WpGTCa6raiMFbozKIk5yAHaDe&pid=Api&P=0&h=180" alt="Potatoes"/>
+                            <figcaption>PUBLIC HEALTH</figcaption>
+                        </figure>
+                        <figure class="ingredients_item">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.Q0moZ6Uj0WmpbgFuJgEhIgHaFf&pid=Api&P=0&h=180" alt="tomatoes"/>
+                            <figcaption>ALLIED HEALTH</figcaption>
+                        </figure>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+            <div class="main_video">
+    
+                <ol class="steps_list">
+                    <li>
+                        <b>Step 1: Local Anesthesia with Sedation or General Anesthesia</b>
+                        <p>Depending on your case, you'll receive local anesthesia around the insertion point with sedation or possibly general anesthesia to make you sleep.</p>
+                    </li>
+    
+                    <li>
+                        <b>Step 2: Catheter Insertion </b>
+                        <p>A thin, flexible tube called a catheter is inserted into an artery in your groin or arm (femoral or radial access) using a needle and guidewire. X-ray imaging helps guide the catheter to the blocked artery.
+    </p>
+                    </li>
+    
+                    <li>
+                        <b>Step 3: Balloon Angioplasty </b>
+                        <p>A deflated balloon on the catheter tip is positioned at the blockage. The balloon is then inflated, widening the narrowed artery.
+    </p>
+                    </li>
+    
+                    <li>
+                        <b>Step 4: Stent Placement</b>
+                        <p>A collapsed stent pre-loaded on a delivery balloon is positioned within the narrowed segment.
+    
+    </p>
+                    </li>
+    
+                    <li>
+                        <b>Step 5: Stent Expansion</b>
+                        <p>The balloon within the stent inflates, expanding the stent and pushing against the artery wall to hold it open. The balloon is then deflated and removed, leaving the stent in place.</p>
+                    </li>
+    
+                    <li>
+                        <b>Step 6: Verification and Closure </b>
+                        <p>X-ray imaging confirms proper stent placement and blood flow. The catheter is removed, and the access point is closed with pressure or a closure device.</p>
+                    </li>
+    
+                </ol>
+    
+    
+                <div class="video_box">
+                    <div class="video_box__wrap">
+                        <video src="https://media.istockphoto.com/id/1406999723/video/stent-implantation-for-supporting-blood-circulation-into-blood-vessels-during-angioplasty-3d.mp4?s=mp4-640x640-is&k=20&c=qxXRMlDCzuy8nVYNyOU-q_e0opEsvoKLlMHrxZ7Ny9Y=" muted autoplay loop poster="https://www.istockphoto.com/video/stent-implantation-for-supporting-blood-circulation-into-blood-vessels-during-gm1406999723-458355772">Video about Borsh
+                        </video>
+                    </div>
+                </div>
+    
+            </div>
+        </main>
+    </div>
+    <script>
+        function removeImage() {
+            document.getElementsByClassName('.main_image').style.display = 'none';
+        }
+        function toggleOptions() {
+            var options = document.getElementById("options");
+            options.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <html lang="en">
+  
+<head>
+    <title>Medical Center</title>
+    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+  
+  
+  <nav class="nav">
+  <div class="nav-bar">
+    <a class="nav-link" href="#sect-1">Welcome</a>
+    <a class="nav-link" href="#sect-2">Vision</a>
+    <a class="nav-link" href="#sect-3">About us</a>
+  
+    <span class="nav-slider"></span>
+  </div>
+  
+   
+        <div class="top-section">
+        <img src=https://www.state.gov/wp-content/uploads/2019/04/shutterstock_669184549-2560x852.jpg class="top-image">
+      
+ <h1 class="title">COMPANION</h1>
+      <h2 class="title2">CARE</h2>
+          <div class="main-content">
+        <p>place where your</p> <p>Learning grows....</p></div>
+  </div>
+      
+        <div>
+       <button class="start-button" onclick="returnLogin()">Login</button> </div>
+  <main class="nav-main">
+  <section id="sect-1">
+    <h1>Welcome</h1>
+    <p>Welcome to Companion Care! We're thrilled to have you on board.  This app is designed for nurse to develop their knowledge through microlearning.  Get ready for the exciting journey.  We're here to make your experience amazing, so dive in and explore!</p>
+  </section>
+  <section id="sect-2">
+    <h1>Vision</h1>
+    <p>
+1.Always Available: Learners can access education whenever and wherever they want.</br>
+2.Empowerment: The app equips users with the tools and knowledge to succeed.</br>
+3.Full Potential: Companion care strives to help each learner reach their individual goals.</br>
+4.Personalized Learning: Tailored learning paths based on individual progress.</br>
+5.Offline Access: Downloading videos and exercises for studying without an internet connection.</p>
+  </section>
+  <section id="sect-3">
+    <h1>About us</b></h1>
+    <p>COMPANON CARE is mainly built for microlearning of complex topics. It is built for clinical staffs. Through this app a clinical staff can grow their knowledge while working. This app includes quizes, scenario-based training can make learning more engaging and interactive.</p>
+  </section>
+>
+</main>
+<script src ="{{url_for('static', filename='comp.js')}}"></script>
+<script>
+  function returnLogin() {
+    window.location.href='/login'
+  }
+</script>
+ 
+    
+
+</body>
+</html>
